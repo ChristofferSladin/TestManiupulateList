@@ -13,8 +13,6 @@ namespace TestManiupulateList
         public string PriceType { get; set; }
         public decimal Price { get; set; }
 
-
-
         public Product(int id, string name, string pricType, decimal price)
         {
             this.Id = id;

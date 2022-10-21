@@ -10,11 +10,6 @@ namespace TestManiupulateList
     {
         public void Run()
         {
-            ChangeObj();
-        }
-
-        public void ChangeObj()
-        {
             var products = new List<Product>();
 
             products.Add(new Product(11, "banan", "st", 30m));
@@ -27,6 +22,11 @@ namespace TestManiupulateList
                 Console.WriteLine($"{product.Id} {product.Name} {product.Price} {product.PriceType}");
             }
 
+            ChangeObj(products);
+        }
+
+        public void ChangeObj(List<Product> products)
+        {
             Console.WriteLine("hitta id");
             var myValue = int.Parse(Console.ReadLine());
 
